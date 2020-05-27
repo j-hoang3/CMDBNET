@@ -1,0 +1,118 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+/*.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}*/
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Navbar Background & Font Color */
+.navbar-inverse {
+    background-color: #3C7BA6;
+}
+
+    .navbar-inverse .navbar-brand {
+        color: #fff;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #fff;
+    }
+
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+        background-color: #5B8FB4;
+    }
+
+/* Table column background color */
+th.cmdb_blue {
+    background-color: transparent;
+}
+
+th.sunflower_yellow {
+    background-color: transparent;
+}
+
+table.dataTable.display tbody > .odd.selected td, table.dataTable.display tbody > .even.selected td {
+    background-color: #a6b4cd;
+}
+
+table.dataTable.display tbody tr td.cmdb_blue, table.dataTable.display tbody tr td.cmdb_blue.sorting_1 {
+    background-color: lightblue;
+}
+
+table.dataTable.display tbody tr td.sunflower_yellow, table.dataTable.display tbody tr td.sunflower_yellow.sorting_1 {
+    background-color: #f6e9a6;
+}
+
+table.dataTable.display tbody tr td.ad_blue, table.dataTable.display tbody tr td.ad_blue.sorting_1 {
+    background-color: lightblue;
+}
+
+table.dataTable.display tbody tr td.ecmo_orange, table.dataTable.display tbody tr td.ecmo_orange.sorting_1 {
+    background-color: #f2ba8b;
+}
+
+table.dataTable.display tbody tr td.epo_green, table.dataTable.display tbody tr td.epo_green.sorting_1 {
+    background-color: #a2dba2;
+}
+
+table.dataTable.display tbody tr td.sccm_red, table.dataTable.display tbody tr td.sccm_red.sorting_1 {
+    background-color: #e5aeb6;
+}
+
+/* Table Buttons */
+div.dt-buttons {
+    padding-left: 30px;
+    margin-top: -7px;
+    margin-bottom: 15px;
+}
+
+button.dt-button {
+    background: transparent;
+    border-radius: 5px;
+}
+
+/* Search Pane */
+span.label {
+    color: black;
+}
+
+div.dt-searchPanes div.pane div.title {
+    font-size: 1em;
+}
+
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* Display tables on large screens */
+@media (min-width: 1200px) {
+    .container {
+        width: 1900px;
+    }
+}

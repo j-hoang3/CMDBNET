@@ -1,0 +1,179 @@
+﻿@page "{id:int?}"
+@model CmdbNet.Pages.Items.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    ViewData["User"] = HttpContext.User.Identity.Name;
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cmdb</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.CdTag)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.CdTag)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Organization)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Organization)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.HostName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.HostName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Location)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Location)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Floor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Floor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Room)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Room)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.IpAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.IpAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.SubnetMask)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.SubnetMask)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.MacAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.MacAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Manufacturer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Manufacturer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Model)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Model)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.SerialNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.SerialNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.OperatingSystem)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.OperatingSystem)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.AdUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.AdUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.SunflowerUser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.SunflowerUser)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Status)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.ClassType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.ClassType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.AcquisitionDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.AcquisitionDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.WarrantyEndDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.WarrantyEndDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Custodian)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Custodian)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Comments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.InventoriedBy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.InventoriedBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.InventoryDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.InventoryDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.LastScan)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.LastScan)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.ModifiedBy)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.ModifiedBy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cmdb.Modified)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cmdb.Modified)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-page="./Versions" asp-route-id="@Model.Cmdb.CmdbID">Version History</a> |
+    <a asp-page="./Edit" asp-route-id="@Model.Cmdb.CmdbID">Edit</a> |
+    <a asp-page="./Delete" asp-route-id="@Model.Cmdb.CmdbID">Delete</a> |
+    <a asp-page="/Index">Back to List</a>
+</div>

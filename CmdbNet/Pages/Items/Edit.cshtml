@@ -1,0 +1,194 @@
+﻿@page "{id:int?}"
+@model CmdbNet.Pages.Items.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    ViewData["User"] = HttpContext.User.Identity.Name;
+}
+
+<h2>Edit</h2>
+
+<h4>Cmdb</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Cmdb.CmdbID" />
+            <div class="form-group">
+                <label asp-for="Cmdb.CdTag" class="control-label"></label>
+                <input asp-for="Cmdb.CdTag" class="form-control" />
+                <span asp-validation-for="Cmdb.CdTag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.Organization" class="control-label"></label>
+                <input asp-for="Cmdb.Organization" class="form-control" />
+                <span asp-validation-for="Cmdb.Organization" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.HostName" class="control-label"></label>
+                <input asp-for="Cmdb.HostName" class="form-control" />
+                <span asp-validation-for="Cmdb.HostName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.Location" class="control-label"></label>
+                <input asp-for="Cmdb.Location" class="form-control" />
+                <span asp-validation-for="Cmdb.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.Floor" class="control-label"></label>
+                <input asp-for="Cmdb.Floor" class="form-control" />
+                <span asp-validation-for="Cmdb.Floor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.Room" class="control-label"></label>
+                <input asp-for="Cmdb.Room" class="form-control" />
+                <span asp-validation-for="Cmdb.Room" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.IpAddress" class="control-label"></label>
+                <input asp-for="Cmdb.IpAddress" class="form-control" />
+                <span asp-validation-for="Cmdb.IpAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.SubnetMask" class="control-label"></label>
+                <input asp-for="Cmdb.SubnetMask" class="form-control" />
+                <span asp-validation-for="Cmdb.SubnetMask" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.MacAddress" class="control-label"></label>
+                <input asp-for="Cmdb.MacAddress" class="form-control" />
+                <span asp-validation-for="Cmdb.MacAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.Manufacturer" class="control-label"></label>
+                <input asp-for="Cmdb.Manufacturer" class="form-control" />
+                <span asp-validation-for="Cmdb.Manufacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.Model" class="control-label"></label>
+                <input asp-for="Cmdb.Model" class="form-control" />
+                <span asp-validation-for="Cmdb.Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.SerialNumber" class="control-label"></label>
+                <input asp-for="Cmdb.SerialNumber" class="form-control" />
+                <span asp-validation-for="Cmdb.SerialNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.OperatingSystem" class="control-label"></label>
+                <input asp-for="Cmdb.OperatingSystem" class="form-control" />
+                <span asp-validation-for="Cmdb.OperatingSystem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.AdUser" class="control-label"></label>
+                <input asp-for="Cmdb.AdUser" class="form-control aduser" />
+                <span asp-validation-for="Cmdb.AdUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.SunflowerUser" class="control-label"></label>
+                <input asp-for="Cmdb.SunflowerUser" class="form-control" />
+                <span asp-validation-for="Cmdb.SunflowerUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.Status" class="control-label"></label>
+                <input asp-for="Cmdb.Status" class="form-control" />
+                <span asp-validation-for="Cmdb.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.ClassType" class="control-label"></label>
+                <input asp-for="Cmdb.ClassType" class="form-control" />
+                <span asp-validation-for="Cmdb.ClassType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.AcquisitionDate" class="control-label"></label>
+                <input asp-for="Cmdb.AcquisitionDate" class="form-control" />
+                <span asp-validation-for="Cmdb.AcquisitionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.WarrantyEndDate" class="control-label"></label>
+                <input asp-for="Cmdb.WarrantyEndDate" class="form-control" />
+                <span asp-validation-for="Cmdb.WarrantyEndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.Custodian" class="control-label"></label>
+                <input asp-for="Cmdb.Custodian" class="form-control aduser" />
+                <span asp-validation-for="Cmdb.Custodian" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.Comments" class="control-label"></label>
+                <input asp-for="Cmdb.Comments" class="form-control" />
+                <span asp-validation-for="Cmdb.Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.InventoriedBy" class="control-label"></label>
+                <input asp-for="Cmdb.InventoriedBy" class="form-control aduser" />
+                <span asp-validation-for="Cmdb.InventoriedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.InventoryDate" class="control-label"></label>
+                <input asp-for="Cmdb.InventoryDate" class="form-control" />
+                <span asp-validation-for="Cmdb.InventoryDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cmdb.LastScan" class="control-label"></label>
+                <input asp-for="Cmdb.LastScan" class="form-control" />
+                <span asp-validation-for="Cmdb.LastScan" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                    <label asp-for="Cmdb.ModifiedBy" class="control-label"></label>
+                    <input asp-for="Cmdb.ModifiedBy" class="form-control" />
+                    <span asp-validation-for="Cmdb.ModifiedBy" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cmdb.Modified" class="control-label"></label>
+                    <input asp-for="Cmdb.Modified" class="form-control" />
+                    <span asp-validation-for="Cmdb.Modified" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cmdb.AdID" class="control-label"></label>
+                    <select asp-for="Cmdb.AdID" class="form-control" asp-items="ViewBag.AdID"></select>
+                    <span asp-validation-for="Cmdb.AdID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cmdb.EcmoID" class="control-label"></label>
+                    <select asp-for="Cmdb.EcmoID" class="form-control" asp-items="ViewBag.EcmoID"></select>
+                    <span asp-validation-for="Cmdb.EcmoID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cmdb.EpoID" class="control-label"></label>
+                    <select asp-for="Cmdb.EpoID" class="form-control" asp-items="ViewBag.EpoID"></select>
+                    <span asp-validation-for="Cmdb.EpoID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cmdb.SccmID" class="control-label"></label>
+                    <select asp-for="Cmdb.SccmID" class="form-control" asp-items="ViewBag.SccmID"></select>
+                    <span asp-validation-for="Cmdb.SccmID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cmdb.SunflowerID" class="control-label"></label>
+                    <select asp-for="Cmdb.SunflowerID" class="form-control" asp-items="ViewBag.SunflowerID"></select>
+                    <span asp-validation-for="Cmdb.SunflowerID" class="text-danger"></span>
+                </div>*@
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="/Index">Back to List</a>
+</div>
+
+@section Scripts {
+
+    <script>
+        var list = @Html.Raw(Json.Serialize(Model.AdNames));
+        $(".aduser").autocomplete({
+            source: list
+        });
+    </script>
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,59 @@
+﻿@page
+@model CmdbNet.Pages.Property.IndexModel
+
+@{
+    ViewData["Title"] = "Propery Report";
+    ViewData["User"] = HttpContext.User.Identity.Name;
+}
+
+<br />
+
+<!-- Property View Table -->
+<div id="property">
+
+    @*<div id="date_picker" style="margin-bottom:15px;">
+        From:<input type="date" id="txtMin" />
+        To: <input type="date" id="txtMax" />
+        <button id="date_property" type="button">Set</button>
+    </div>*@
+
+    <table id="property_table" class="display cell-border compact nowrap" style="width:100%;">
+
+        <thead>
+            <tr>
+                <th></th>
+                <th>CD Tag</th>
+                <th>CMDB CD Tag</th>
+                <th>AD User</th>
+                <th>Current User</th>
+                <th>Room</th>
+                <th>stlv2</th>
+                <th>Floor</th>
+                <th>Location</th>
+                <th>stlv1</th>
+                <th>Inventory Date</th>
+                <th>stlv3</th>
+                <th>Inventoried By</th>
+                <th>Effective Date</th>
+                <th>Physical Inventory Date</th>
+                <th>CMDB Status</th>
+                <th>Status</th>
+                <th>Sunflower User</th>
+                <th>Description</th>
+                <th>Model Name</th>
+                <th>Class - Type</th>
+                <th>Organization</th>
+                <th>Cust Area</th>
+                <th>Custodian</th>
+                <th>Host Name</th>
+                <th>Resolution</th>
+                <th>Resolution Date</th>
+                <th>Final Event</th>
+                <th>Datetime</th>
+                <th>Final Event User Defined Field Label 01</th>
+                <th>Final Event User Field 01</th>
+            </tr>
+        </thead>
+    </table>
+
+</div>

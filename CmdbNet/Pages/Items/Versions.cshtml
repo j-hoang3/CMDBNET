@@ -1,0 +1,222 @@
+﻿@page "{id:int?}"
+@model CmdbNet.Pages.Items.VersionsModel
+
+@{
+    ViewData["Title"] = "Versions";
+
+    ViewData["User"] = HttpContext.User.Identity.Name;
+}
+
+<h2>Versions</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                CdTag
+            </th>
+            <th>
+                Organization
+            </th>
+            <th>
+                HostName
+            </th>
+            <th>
+                Location
+            </th>
+            <th>
+                Floor
+            </th>
+            <th>
+                Room
+            </th>
+            <th>
+                IpAddress
+            </th>
+            <th>
+                SubnetMask
+            </th>
+            <th>
+                MacAddress
+            </th>
+            <th>
+                Manufacturer
+            </th>
+            <th>
+                Model
+            </th>
+            <th>
+                SerialNumber
+            </th>
+            <th>
+                OperatingSystem
+            </th>
+            <th>
+                AdUser
+            </th>
+            <th>
+                SunflowerUser
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                ClassType
+            </th>
+            <th>
+                AcquisitionDate
+            </th>
+            <th>
+                WarrantyEndDate
+            </th>
+            <th>
+                Custodian
+            </th>
+            <th>
+                Comments
+            </th>
+            <th>
+                InventoriedBy
+            </th>
+            <th>
+                InventoryDate
+            </th>
+            <th>
+                LastScan
+            </th>
+            <th>
+                ModifiedBy
+            </th>
+            <th>
+                Modified
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Versions)
+        {
+            <tr>
+                <td>
+                    <form method="post">
+                        <input type="hidden" asp-for="@item.CmdbID" value="@item.CmdbID" />
+                        <input type="hidden" asp-for="@item.CdTag" value="@item.CdTag" />
+                        <input type="hidden" asp-for="@item.Organization" value="@item.Organization" />
+                        <input type="hidden" asp-for="@item.HostName" value="@item.HostName" />
+                        <input type="hidden" asp-for="@item.Location" value="@item.Location" />
+                        <input type="hidden" asp-for="@item.Floor" value="@item.Floor" />
+                        <input type="hidden" asp-for="@item.Room" value="@item.Room" />
+                        <input type="hidden" asp-for="@item.IpAddress" value="@item.IpAddress" />
+                        <input type="hidden" asp-for="@item.SubnetMask" value="@item.SubnetMask" />
+                        <input type="hidden" asp-for="@item.MacAddress" value="@item.MacAddress" />
+                        <input type="hidden" asp-for="@item.Manufacturer" value="@item.Manufacturer" />
+                        <input type="hidden" asp-for="@item.Model" value="@item.Model" />
+                        <input type="hidden" asp-for="@item.SerialNumber" value="@item.SerialNumber" />
+                        <input type="hidden" asp-for="@item.OperatingSystem" value="@item.OperatingSystem" />
+                        <input type="hidden" asp-for="@item.AdUser" value="@item.AdUser" />
+                        <input type="hidden" asp-for="@item.SunflowerUser" value="@item.SunflowerUser" />
+                        <input type="hidden" asp-for="@item.Status" value="@item.Status" />
+                        <input type="hidden" asp-for="@item.ClassType" value="@item.ClassType" />
+                        <input type="hidden" asp-for="@item.AcquisitionDate" value="@item.AcquisitionDate" />
+                        <input type="hidden" asp-for="@item.WarrantyEndDate" value="@item.WarrantyEndDate" />
+                        <input type="hidden" asp-for="@item.Custodian" value="@item.Custodian" />
+                        <input type="hidden" asp-for="@item.Comments" value="@item.Comments" />
+                        <input type="hidden" asp-for="@item.InventoriedBy" value="@item.InventoriedBy" />
+                        <input type="hidden" asp-for="@item.InventoryDate" value="@item.InventoryDate" />
+                        <input type="hidden" asp-for="@item.LastScan" value="@item.LastScan" />
+                        <input type="hidden" asp-for="@item.ModifiedBy" value="@item.ModifiedBy" />
+                        <input type="hidden" asp-for="@item.Modified" value="@item.Modified" />
+
+
+                        <button type="submit" class="btn btn-primary" asp-page-handler="RestoreVersion" aria-haspopup="true" aria-expanded="false">
+                            Restore
+                        </button>
+                    </form>
+                <td>
+                    @item.CdTag
+                </td>
+                <td>
+                    @item.Organization
+                </td>
+                <td>
+                    @item.HostName
+                </td>
+                <td>
+                    @item.Location
+                </td>
+                <td>
+                    @item.Floor
+                </td>
+                <td>
+                    @item.Room
+                </td>
+                <td>
+                    @item.IpAddress
+                </td>
+                <td>
+                    @item.SubnetMask
+                </td>
+                <td>
+                    @item.MacAddress
+                </td>
+                <td>
+                    @item.Manufacturer
+                </td>
+                <td>
+                    @item.Model
+                </td>
+                <td>
+                    @item.SerialNumber
+                </td>
+                <td>
+                    @item.OperatingSystem
+                </td>
+                <td>
+                    @item.AdUser
+                </td>
+                <td>
+                    @item.SunflowerUser
+                </td>
+                <td>
+                    @item.Status
+                </td>
+                <td>
+                    @item.ClassType
+                </td>
+                <td>
+                    @item.AcquisitionDate
+                </td>
+                <td>
+                    @item.WarrantyEndDate
+                </td>
+                <td>
+                    @item.Custodian
+                </td>
+                <td>
+                    @item.Comments
+                </td>
+                <td>
+                    @item.InventoriedBy
+                </td>
+                <td>
+                    @item.InventoryDate
+                </td>
+                <td>
+                    @item.LastScan
+                </td>
+                <td>
+                    @item.ModifiedBy
+                </td>
+                <td>
+                    @item.Modified
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-page="./Details" asp-route-id="@Model.Versions[0].CmdbID">Details</a> |
+    <a asp-page="/Index">Back to List</a>
+</div>
+

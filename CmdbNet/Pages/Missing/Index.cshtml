@@ -1,0 +1,53 @@
+﻿@page
+@model CmdbNet.Pages.Missing.IndexModel
+
+@{
+    ViewData["Title"] = "My Property Not in Sunflower";
+    ViewData["User"] = HttpContext.User.Identity.Name;
+}
+
+<br />
+
+<div id="custodian_missing_items">
+
+    <div id="date_picker" style="margin-bottom:15px;">
+        From:<input type="date" id="txtMin" />
+        To: <input type="date" id="txtMax" />
+        <button id="date_missing" type="button">Set</button>
+    </div>
+
+    <table id="custodian_missing_items_table" class="display cell-border compact nowrap" style="width:100%;">
+        <thead>
+            <tr>
+                <th></th>
+                <th>CD Tag</th>
+                <th>Organization</th>
+                <th>Host Name</th>
+                <th>Location</th>
+                <th>Floor</th>
+                <th>Room</th>
+                <th>IP Address</th>
+                <th>Subnet Mask</th>
+                <th>MAC Address</th>
+                <th>Manufacturer</th>
+                <th>Model</th>
+                <th>Serial Number</th>
+                <th>Operating System</th>
+                <th>AD User</th>
+                <th>Sunflower User</th>
+                <th>Status</th>
+                <th>Class - Type</th>
+                <th>Acquisition Date</th>
+                <th>Warranty End Date</th>
+                <th>Custodian</th>
+                <th>Comments</th>
+                <th>Inventoried By</th>
+                <th>Inventory Date</th>
+                <th>Last Scan</th>
+                <th>Modified By</th>
+                <th>Modified</th>
+            </tr>
+        </thead>
+
+    </table>
+</div>

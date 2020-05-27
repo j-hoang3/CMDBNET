@@ -1,0 +1,40 @@
+﻿@page
+@model CmdbNet.Pages.Security.IndexModel
+
+@{
+    ViewData["Title"] = "Security";
+    ViewData["User"] = HttpContext.User.Identity.Name;
+}
+
+<br />
+
+<div id="security">
+
+    @*<div id="date_picker" style="margin-bottom:15px;">
+        From:<input type="date" id="txtMin" />
+        To: <input type="date" id="txtMax" />
+        <button id="date_security" type="button">Set</button>
+    </div>*@
+
+    <table id="inventory_table" class="display cell-border compact nowrap" style="width:100%;">
+        <thead>
+            <tr>
+                <th></th>
+                <th>CD Tag</th>
+                <th>Host Name</th>
+                <th>Location</th>
+                <th>CMDB OS</th>
+                <th>AD User</th>
+                <th>CMDB Status</th>
+                <th>Class - Type</th>
+                <th>AD Description</th>
+                <th>AD Account Disabled</th>
+                <th>ECMO Last Report</th>
+                <th>ePO Last Report</th>
+                <th>SCCM OS</th>
+                <th>Sunflower Status</th>
+            </tr>
+        </thead>
+    </table>
+
+</div>
